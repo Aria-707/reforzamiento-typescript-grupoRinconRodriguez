@@ -1,20 +1,22 @@
-interface Student {
-    name: string;
-    age: number;
-    course: string;
-    semester: string;
-}
+export function ejercicio3() {
+    interface Student {
+        name: string;
+        age: number;
+        course: string;
+        semester: string;
+    }
 
-const camilo: Student = {
-    name: 'Camilo' ,
-    age: 21,
-    course: 'Ingeniería de Sistemas y Computación' ,
-    semester: 'IV',
-}
+    const camilo: Student = {
+        name: 'Camilo',
+        age: 21,
+        course: 'Ingeniería de Sistemas y Computación',
+        semester: 'IV',
+    }
 
-function describe (student: Student): string{
-    return `El estudiante ${student.name} se encuentra cursando el semestre ${student.semester} de la carrera de ${student.course}. El estudiante actualemnte tiene ${student.age} años.`
-}
+    function describe(student: Student): string {
+        return `El estudiante ${student.name} se encuentra cursando el semestre ${student.semester} de la carrera de ${student.course}. El estudiante actualemnte tiene ${student.age} años.`
+    }
 
-const description = (describe(camilo))
-console. log(description) ;
+    const description = (describe(camilo))
+    console.log(description);
+}
